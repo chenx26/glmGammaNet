@@ -1,4 +1,4 @@
-function (data, ..., max.freq = 0.5, twosided = FALSE, keep = 1)
+myperiodogram = function (data, ..., max.freq = 0.5, twosided = FALSE, keep = 1)
 {
         data.fft = fft(data)
         N = length(data)
