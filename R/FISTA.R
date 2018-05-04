@@ -184,7 +184,7 @@ glmGammaNet = function(x0, A, b, lambda.EN, shape0, alpha.EN = 0.5, ABSTOL = 1e-
 
 # cross validation for glmGammaNet
 
-cv.glmGammaNet = function(A, b, alpha.EN = 0.5, nfolds = 10,
+cv.glmGammaNet = function(A, b, ..., alpha.EN = 0.5, nfolds = 10,
                           nlambda = 100, ABSTOL = 1e-8,
                           maxiter = 1000, min.lambda.ratio = 1e-4){
         # First fit mle without regularization to estimate shape parameter

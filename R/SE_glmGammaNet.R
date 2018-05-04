@@ -23,7 +23,7 @@ SE.glmGammaNet = function (data, ..., d = 7, alpha.EN = 0.5, keep = 1, standardi
                         x.mat[, i] = (tmp - mean(tmp))/sd(tmp)
                 }
         }
-        res = cv.glmGammaNet(x.mat, my.periodogram, alpha.EN = alpha.EN)
+        res = cv.glmGammaNet(x.mat, my.periodogram, ..., alpha.EN = alpha.EN)
         res = res$x
         if (return.coeffs) {
                 if (standardize) {
